@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_back.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_02.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_03.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_04.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_05.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_06.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_07.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_08.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_09.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_10.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_A.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_J.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_K.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_clubs_Q.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_02.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_03.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_04.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_05.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_06.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_07.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_08.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_09.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_10.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_A.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_J.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_K.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_diamonds_Q.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_empty.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_02.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_03.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_04.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_05.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_06.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_07.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_08.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_09.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_10.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_A.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_J.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_K.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_hearts_Q.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_joker_black.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_joker_red.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_02.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_03.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_04.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_05.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_06.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_07.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_08.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_09.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_10.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_A.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_J.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_K.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/card_spades_Q.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/cardsLarge_tilemap.png</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/PixelFont.spritefont</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/SecondPixelFont.spritefont</File>
+    <File>C:/Users/Dmitrii.Ivanov/source/repos/Cards/Cards/Content/SmileyWalk.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
