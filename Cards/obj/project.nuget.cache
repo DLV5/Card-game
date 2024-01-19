@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "43bQXpIUxIFP9VNJh1ZFv9+u1sZfol/t1c8FCCsntgIOHgsmdkWUshwkW792q2eAintyXGI5KC+uCcijNh2+Aw==",
+  "dgSpecHash": "iKg0rOp/UQOp1iXC3Uf/XQeh0+tKz0bJHS/iKzugoyrf71sW22HbRitoClD7N7GDwqVu9UopTTm9fb3664fj5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dmitrii.Ivanov\\source\\repos\\Cards\\Cards\\Cards.csproj",
+  "projectFilePath": "D:\\source\\repos\\Card-game\\Cards\\Cards.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dmitrii.Ivanov\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "C:\\Users\\Dmitrii.Ivanov\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\diman\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\diman\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }

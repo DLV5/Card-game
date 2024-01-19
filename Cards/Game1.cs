@@ -6,9 +6,7 @@ namespace Cards
 {
     public class Game1 : Game
     {
-        private AnimatedSprite animatedSprite;
-        private Vector2 playerPosition;
-        private float playerSpeed;
+        private DeckBootstap _deckBootstap;
 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
@@ -23,9 +21,11 @@ namespace Cards
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            playerPosition = new Vector2 (_graphics.PreferredBackBufferWidth / 2,
-                _graphics.PreferredBackBufferHeight / 2);
-            playerSpeed = 100f;
+            _graphics.PreferredBackBufferWidth = 1920;
+            _graphics.PreferredBackBufferHeight = 1080;
+            _graphics.ApplyChanges();
+
+            _deckBootstap = new DeckBootstap();
 
             base.Initialize();
         }
@@ -35,9 +35,7 @@ namespace Cards
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-
-            Texture2D texture = Content.Load<Texture2D>("SmileyWalk");
-            animatedSprite = new AnimatedSprite(texture, 4, 4);
+            _deckBootstap.Deck.LoadCards(Content);
         }
 
         protected override void Update(GameTime gameTime)
@@ -45,30 +43,7 @@ namespace Cards
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
-            var kstate = Keyboard.GetState();
-
-            if (kstate.IsKeyDown(Keys.Up))
-            {
-                playerPosition.Y -= playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            }
-
-            if (kstate.IsKeyDown(Keys.Down))
-            {
-                playerPosition.Y += playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            }
-
-            if (kstate.IsKeyDown(Keys.Left))
-            {
-                playerPosition.X -= playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            }
-
-            if (kstate.IsKeyDown(Keys.Right))
-            {
-                playerPosition.X += playerSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
-            }           
-
-            animatedSprite.Update();
+            // TODO: Add your update logic here             
 
             base.Update(gameTime);
         }
@@ -78,7 +53,8 @@ namespace Cards
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            animatedSprite.Draw(_spriteBatch, playerPosition);
+
+            _deckBootstap.Deck.DrawACards(_spriteBatch);
 
             base.Draw(gameTime);
         }
