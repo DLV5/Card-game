@@ -17,7 +17,7 @@ namespace Cards
         {
             List<Card> deck = FillTheDeck();
             deck = Shuffle(deck);
-            Deck = new Deck(ConvertToArray(deck));
+            Deck = new Deck(ConvertToArray(deck), ConvertToQueue(deck));
         }
 
         public static List<Card> Shuffle(List<Card> source)
@@ -38,6 +38,11 @@ namespace Cards
             }
 
             return output;
+        }
+
+        private Queue<Card> ConvertToQueue(List<Card> cards)
+        {
+            return new Queue<Card>(cards);
         }
 
         private List<Card> FillTheDeck()

@@ -711,6 +711,12 @@
 /processorParam:TextureFormat=Compressed
 /build:SecondPixelFont.spritefont
 
+#begin SelectEffect.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:SelectEffect.fx
+
 #begin SmileyWalk.png
 /importer:TextureImporter
 /processor:TextureProcessor

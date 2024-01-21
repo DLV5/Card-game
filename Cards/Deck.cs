@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Numerics;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace Cards
 {
@@ -22,45 +22,52 @@ namespace Cards
         private const int _marginBottom = 48;
 
         private int _currentDeckSize;
+
+        //This is for printing
         private Card[,] _cards;
+
+        //Same deck used when we need to take a card
+        private Queue<Card> _queueOfCards;
 
         private bool _wasCardsPrinted = false;
 
-        public Deck(Card[,] cards)
+        public Deck(Card[,] cards, Queue<Card> queueOfCards)
         {
             _cards = cards;
+            _queueOfCards = queueOfCards;
         }
 
-        //public Card GetNextCard()
-        //{
-        //    if (_currentDeckSize == 0)
-        //    {
-        //        Debug.WriteLine("Deck is empty!");
-        //        return null;
-        //    }
+        public Card GetNextCard()
+        {
+            if (_currentDeckSize == 0)
+            {
+                Debug.WriteLine("Deck is empty!");
+                return null;
+            }
 
-        //    Card card = _cards.Dequeue();
-        //    _cards.Enqueue(card);
+            _currentDeckSize--;
+            Card card = _queueOfCards.Dequeue();
 
-        //    return card;
-        //}
+            return card;
+        }
 
         public void LoadCards(ContentManager content)
         {
             foreach (Card card in _cards)
             {
-                card.LoadATexture(content);
+                card.UI.LoadATexture(content);
+                card.UI.LoadSelectEffect(content, "SelectEffect");
             }
         }
 
-        public void DrawACards(SpriteBatch spriteBatch)
+        public void DrawACards(SpriteBatch spriteBatch, MouseState mouse)
         {
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 9; j++)
                 {
                     Vector2 placeToDraw = GetAPlaceToDraw(i, j);
-                    _cards[i,j].Draw(spriteBatch, placeToDraw);
+                    _cards[i,j].UI.Draw(spriteBatch, placeToDraw, mouse);
                 }
             }
         }

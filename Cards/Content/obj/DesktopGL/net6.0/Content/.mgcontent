@@ -63,9 +63,11 @@
     <File>D:/source/repos/Card-game/Cards/Content/cardsLarge_tilemap.png</File>
     <File>D:/source/repos/Card-game/Cards/Content/PixelFont.spritefont</File>
     <File>D:/source/repos/Card-game/Cards/Content/SecondPixelFont.spritefont</File>
+    <File>D:/source/repos/Card-game/Cards/Content/SelectEffect.fx</File>
     <File>D:/source/repos/Card-game/Cards/Content/SmileyWalk.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

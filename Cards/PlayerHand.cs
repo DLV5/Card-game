@@ -4,7 +4,9 @@ namespace Cards
 {
     internal class PlayerHand
     {
-        private List<Card> _cards;
+        private Deck _deck;
+
+        private List<Card> _cardsInHand;
 
         private int _startAmountOfCards = 6;
 
@@ -17,6 +19,14 @@ namespace Cards
         {
             _startAmountOfCards = startAmountOfCards;
             //Get cards from a deck
+        }
+
+        private void FillTheHand()
+        {
+            for (int i = 0; i < _startAmountOfCards; i++)
+            {
+                _cardsInHand[i] = _deck.GetNextCard();
+            }
         }
     }
 }

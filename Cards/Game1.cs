@@ -11,6 +11,8 @@ namespace Cards
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        MouseState mouse;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -43,7 +45,8 @@ namespace Cards
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here             
+            mouse = Mouse.GetState();
+            // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
@@ -54,7 +57,7 @@ namespace Cards
 
             // TODO: Add your drawing code here
 
-            _deckBootstap.Deck.DrawACards(_spriteBatch);
+            _deckBootstap.Deck.DrawACards(_spriteBatch, mouse);
 
             base.Draw(gameTime);
         }

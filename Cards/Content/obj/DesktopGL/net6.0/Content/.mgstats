@@ -58,4 +58,5 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "D:/source/repos/Card-game/Cards/Content/cardsLarge_tilemap.png","D:/source/repos/Card-game/Cards/Content/bin/DesktopGL/Content/cardsLarge_tilemap.xnb","TextureProcessor","Texture2DContent",3512,941809,0.0255152
 "D:/source/repos/Card-game/Cards/Content/PixelFont.spritefont","D:/source/repos/Card-game/Cards/Content/bin/DesktopGL/Content/PixelFont.xnb","FontDescriptionProcessor","SpriteFontContent",2075,70687,0.1741915
 "D:/source/repos/Card-game/Cards/Content/SecondPixelFont.spritefont","D:/source/repos/Card-game/Cards/Content/bin/DesktopGL/Content/SecondPixelFont.xnb","FontDescriptionProcessor","SpriteFontContent",2080,21535,0.1009882
+"D:/source/repos/Card-game/Cards/Content/SelectEffect.fx","D:/source/repos/Card-game/Cards/Content/bin/DesktopGL/Content/SelectEffect.xnb","EffectProcessor","CompiledEffectContent",832,603,0.2723005
 "D:/source/repos/Card-game/Cards/Content/SmileyWalk.png","D:/source/repos/Card-game/Cards/Content/bin/DesktopGL/Content/SmileyWalk.xnb","TextureProcessor","Texture2DContent",40026,262229,0.0076509
