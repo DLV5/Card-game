@@ -2,13 +2,13 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
-using System.Diagnostics;
 
 namespace Cards
 {
     internal class CardUI
     {
+        private static CardUI _currentlyHoldedCard;
+
         private Effect _selectEffect;
         private string _textureName;
 
@@ -48,22 +48,29 @@ namespace Cards
 
             OnMouseEnterCheck(mouse);
 
-            if( _isMouseHoverOverCard && mouse.LeftButton == ButtonState.Pressed)
+            if( _isMouseHoverOverCard && mouse.LeftButton == ButtonState.Pressed && 
+                (_currentlyHoldedCard == null || _currentlyHoldedCard == this))
             {
                 _temporaryCardPosition = new Rectangle(
                     mouse.X - _currentCardPosition.Width/2, 
                     mouse.Y - _currentCardPosition.Height/2,
                     _currentCardPosition.Width,
                     _currentCardPosition.Height);
+                _currentlyHoldedCard = this;
             }
             else if(_isMouseHoverOverCard)
             {
-                if(_temporaryCardPosition != Rectangle.Empty)
+                if(_currentlyHoldedCard == null)
                 {
-                    _temporaryCardPosition = Rectangle.Empty;
+                    _selectEffect.CurrentTechnique.Passes[0].Apply();
+                    _currentCardPosition.Y -= _selectedTopOffset;
                 }
-                _selectEffect.CurrentTechnique.Passes[0].Apply();
-                _currentCardPosition.Y -= _selectedTopOffset;
+            }
+
+            if(mouse.LeftButton == ButtonState.Released)
+            {
+                _currentlyHoldedCard = null;
+                _temporaryCardPosition = Rectangle.Empty;
             }
 
             if(_temporaryCardPosition != Rectangle.Empty)
